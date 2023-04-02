@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockWatcher", "StockWatche
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDataBinding", "WpfDataBinding\WpfDataBinding.csproj", "{193E5587-3FE1-4982-854F-DD954D1E9E17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfListBoxUpdate", "WpfListBoxUpdate\WpfListBoxUpdate.csproj", "{EC306065-4F7A-4F87-96D2-4FB7860568EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMvvm", "WpfMvvm\WpfMvvm.csproj", "{A44E9E0E-CE2E-427A-BD9A-DAEDC3A92F5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{193E5587-3FE1-4982-854F-DD954D1E9E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{193E5587-3FE1-4982-854F-DD954D1E9E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{193E5587-3FE1-4982-854F-DD954D1E9E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC306065-4F7A-4F87-96D2-4FB7860568EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC306065-4F7A-4F87-96D2-4FB7860568EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC306065-4F7A-4F87-96D2-4FB7860568EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC306065-4F7A-4F87-96D2-4FB7860568EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A44E9E0E-CE2E-427A-BD9A-DAEDC3A92F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44E9E0E-CE2E-427A-BD9A-DAEDC3A92F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44E9E0E-CE2E-427A-BD9A-DAEDC3A92F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44E9E0E-CE2E-427A-BD9A-DAEDC3A92F5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
