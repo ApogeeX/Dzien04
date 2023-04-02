@@ -1,0 +1,50 @@
+﻿<Window x:Class="WPFControls.ListViewExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFControls"
+        mc:Ignorable="d"
+        Title="ListViewExample" Height="450" Width="800">
+    <StackPanel>
+        <ListView Margin="10">
+            <ListViewItem >Element A</ListViewItem>
+            <ListViewItem>Element B</ListViewItem>
+            <ListViewItem IsSelected="True">Element C</ListViewItem>
+            <ListViewItem>Element D</ListViewItem>
+        </ListView>
+        <ListView Margin="10">
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Images/red_icon.png" Width="15"></Image>
+                    <TextBlock>Element A</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Images/green_icon.png" Width="15"></Image>
+                    <TextBlock>Element B</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Images/blue_icon.png" Width="15"></Image>
+                    <TextBlock>Element C</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+        </ListView>
+
+        <StackPanel Orientation="Horizontal">
+            <Label>Name Filter</Label>
+            <TextBox Name="txtFilter" TextChanged="txtFilter_TextChanged" Width="200"></TextBox>
+        </StackPanel>
+        <ListView Name="lvUsers">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="200" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Age" Width="50" DisplayMemberBinding="{Binding Age}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Window>
