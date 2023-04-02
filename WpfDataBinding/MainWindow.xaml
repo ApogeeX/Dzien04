@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfDataBinding"
         mc:Ignorable="d"
-        Title="MainWindow" Height="750" Width="400">
+        Title="MainWindow" Height="720" Width="400">
     <StackPanel>
         <StackPanel Margin="0,0,0,20">
             <TextBlock Margin="10">OneWay</TextBlock>
@@ -24,8 +24,8 @@
         </StackPanel>
         <StackPanel Margin="0,0,0,20">
             <TextBlock Margin="10">OneTime</TextBlock>
-            <TextBox Name="SourceText3" Margin="10" Height="40" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" >Test</TextBox>
-            <TextBox Name="DestinationText3" Margin="10" Height="40" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Text="{Binding ElementName=SourceText3, Path=Text, Mode=OneTime, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <TextBox Name="SourceText3" Margin="10" Height="40" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" >Test2</TextBox>
+            <TextBox Name="DestinationText3" Margin="10" Height="40" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Text="{Binding ElementName=SourceText3, Path=Text, Mode=OneTime, UpdateSourceTrigger=LostFocus}"></TextBox>
         </StackPanel>
     </StackPanel>
 </Window>
